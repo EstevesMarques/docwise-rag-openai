@@ -1,17 +1,14 @@
-### ✅ `README.md`
-
-```markdown
 # 📄 DocWise RAG OpenAI
 
 > Um pipeline simples e funcional de Retrieval-Augmented Generation (RAG) para PDFs usando OpenAI, LangChain e FAISS, escrito 100% em Python. Ideal para aprendizado, POCs ou projetos internos.
 
----
+
 
 ## 🚀 Visão Geral
 
 **DocWise RAG OpenAI** permite carregar documentos PDF, processá-los com chunking, gerar embeddings com a API da OpenAI e armazenar os vetores localmente usando FAISS. A partir disso, você pode fazer perguntas em linguagem natural e obter respostas baseadas no conteúdo dos documentos.
 
----
+
 
 ## 📁 Estrutura do Projeto
 
@@ -35,7 +32,7 @@ docwise-rag-openai/
 
 ````
 
----
+
 
 ## 🛠️ Pré-Requisitos
 
@@ -49,7 +46,7 @@ python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 ````
 
----
+
 
 ## 📦 Instalação
 
@@ -59,7 +56,7 @@ Instale as dependências com:
 pip install -r requirements.txt
 ```
 
----
+
 
 ## 🔐 Configuração `.env`
 
@@ -76,7 +73,7 @@ CHUNK_OVERLAP=50
 
 > ⚠️ Nunca compartilhe sua API Key pública ou versionada!
 
----
+
 
 ## 🧠 Pipeline de Ingestão
 
@@ -86,7 +83,7 @@ Este processo carrega os PDFs da pasta `data/`, divide o conteúdo em chunks e g
 python ingest.py
 ```
 
----
+
 
 ## 💬 Interagindo com o Assistente
 
@@ -110,7 +107,7 @@ Digite qualquer pergunta em linguagem natural com base nos documentos PDF carreg
 ❓ Pergunta: Qual o prazo para entrega da proposta?
 ```
 
----
+
 
 ## 🧪 Exemplos de Perguntas
 
@@ -119,7 +116,7 @@ Digite qualquer pergunta em linguagem natural com base nos documentos PDF carreg
 * "Existe alguma exigência de certificação técnica?"
 * "Qual o valor estimado do contrato?"
 
----
+
 
 ## 🧰 Tecnologias Utilizadas
 
@@ -129,7 +126,7 @@ Digite qualquer pergunta em linguagem natural com base nos documentos PDF carreg
 * [PyPDF2](https://github.com/py-pdf/PyPDF2)
 * [dotenv](https://pypi.org/project/python-dotenv/)
 
----
+
 
 ## 🧼 Limpeza e Reindexação
 
@@ -145,14 +142,14 @@ E execute novamente:
 python ingest.py
 ```
 
----
+
 
 ## ⚠️ Avisos
 
 * Este projeto usa **deserialização com Pickle** para FAISS, o que **deve ser evitado com fontes não confiáveis**. Use `allow_dangerous_deserialization=True` **somente se você confia na origem do índice FAISS.**
 * É um projeto educacional/demonstrativo, **não recomendado para produção sem adaptações.**
 
----
+
 
 ## 🧭 Próximos Passos (Sugestões)
 
@@ -162,13 +159,13 @@ python ingest.py
 * 🔐 Controle de acesso e histórico de perguntas
 * ☁️ Armazenamento vetorial remoto (ex: Weaviate, Pinecone, Azure AI Search)
 
----
+
 
 ## 📖 Licença
 
 MIT License — sinta-se à vontade para clonar, estudar e adaptar!
 
----
+
 
 ## ✍️ Autor
 
