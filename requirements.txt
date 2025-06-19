@@ -1,0 +1,8 @@
+langchain
+langchain-community
+llama-index
+openai
+python-dotenv
+PyPDF2
+tqdm
+faiss-cpu
